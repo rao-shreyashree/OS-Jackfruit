@@ -91,7 +91,7 @@ static long get_rss_bytes(pid_t pid)
     long rss_pages = 0;
 
     rcu_read_lock();
-    task = pid_task(find_vpid(pid), PIDTYPE_PID);
+    task = pid_task(find_pid_ns(pid, &init_pid_ns), PIDTYPE_PID);
     if (!task) {
         rcu_read_unlock();
         return -1;
@@ -134,7 +134,7 @@ static void kill_process(const char   *container_id,
     struct task_struct *task;
 
     rcu_read_lock();
-    task = pid_task(find_vpid(pid), PIDTYPE_PID);
+    task = pid_task(find_pid_ns(pid, &init_pid_ns), PIDTYPE_PID);
     if (task)
         send_sig(SIGKILL, task, 1);
     rcu_read_unlock();
