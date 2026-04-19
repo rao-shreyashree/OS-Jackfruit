@@ -1,0 +1,22 @@
+cpu_hog alive elapsed=1 accumulator=9602268163140963379
+cpu_hog alive elapsed=2 accumulator=4596099389685151630
+cpu_hog alive elapsed=3 accumulator=15253810679969089703
+cpu_hog alive elapsed=4 accumulator=829844710105062142
+cpu_hog alive elapsed=5 accumulator=4079976625953793397
+cpu_hog alive elapsed=6 accumulator=12670812792304063413
+cpu_hog alive elapsed=7 accumulator=14167723964921996402
+cpu_hog alive elapsed=8 accumulator=14445138282026135443
+cpu_hog alive elapsed=9 accumulator=13929551962722678606
+cpu_hog alive elapsed=10 accumulator=16420700354186158846
+cpu_hog alive elapsed=11 accumulator=12328118111270609757
+cpu_hog alive elapsed=12 accumulator=16462020407995748070
+cpu_hog alive elapsed=13 accumulator=6833156535052890101
+cpu_hog alive elapsed=14 accumulator=242355775696923809
+cpu_hog alive elapsed=15 accumulator=17093179734820648993
+cpu_hog alive elapsed=16 accumulator=10629685636168427641
+cpu_hog alive elapsed=17 accumulator=13915226942185937297
+cpu_hog alive elapsed=18 accumulator=4004013283821365429
+cpu_hog alive elapsed=19 accumulator=5427090674641936984
+cpu_hog done duration=20 accumulator=16218217860761922333
+19.20user 0.00system 0:19.25elapsed 99%CPU (0avgtext+0avgdata 1536maxresident)k
+0inputs+0outputs (0major+74minor)pagefaults 0swaps

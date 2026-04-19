@@ -128,3 +128,19 @@ guarantee CFS is designed to provide.
 (no core left idle). Experiment 2 shows CFS optimizing for responsiveness (I/O
 task wakes up on time). Both are CFS goals — the scheduler dynamically balances
 them based on workload behavior rather than requiring manual configuration.
+
+---
+
+## Screenshots
+
+### Experiment 1: nice=0 vs nice=19 running concurrently
+![Experiment 1 - nice comparison](screenshots/exp1_nice_comparison.png)
+
+*Both cpu_hog processes running side by side — nice=0 (left) and nice=19 (right).
+Shows nearly identical elapsed time on a multi-core system.*
+
+### Experiment 2: CPU-bound vs I/O-bound concurrently
+![Experiment 2 - CPU vs IO](screenshots/exp2_cpu_vs_io.png)
+
+*cpu_hog (left, 99% CPU, 14.50s) vs io_pulse (right, 0% CPU, 3.65s) running
+simultaneously. io_pulse finishes 4x faster despite competing with a CPU-hungry process.*
